@@ -1,6 +1,5 @@
 import java.sql.*;
 import java.util.Scanner;
-
 public class StudentApp {
     private static Connection connection;
     private static Scanner scanner = new Scanner(System.in);
