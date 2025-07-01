@@ -2,7 +2,7 @@
 
 A simple Java console-based TODO List application using MySQL database for persistent storage.
 
-## Features
+## Feature
 
 - Add tasks with descriptions
 - View all tasks
