@@ -1,13 +1,13 @@
-# Java TODO List App (Console-Based)
+# Java STUDENT  App (Console-Based)
 
-A simple Java console-based TODO List application using MySQL database for persistent storage.
+A simple Java console-based Student application using MySQL database for persistent storage.
 
 ## Feature
 
-- Add tasks with descriptions
-- View all tasks
-- Update task status
-- Delete tasks
+- Add students with name, department, year 
+- View all Students
+- Update students
+- Delete students
 - MySQL database connectivity using JDBC
 
 ## Database Setup
@@ -17,14 +17,14 @@ A simple Java console-based TODO List application using MySQL database for persi
     ```sql
     CREATE DATABASE todo_db;
     ```
-3. Create a table named `tasks`:
+3. Create a table named `stud`:
     ```sql
-    CREATE TABLE tasks (
-        id INT PRIMARY KEY AUTO_INCREMENT,
-        title VARCHAR(255) NOT NULL,
-        description TEXT,
-        status VARCHAR(50) DEFAULT 'Pending'
-    );
+    CREATE TABLE IF NOT EXISTS students (" +
+                "id INT AUTO_INCREMENT PRIMARY KEY," +
+                "name VARCHAR(100)," +
+                "department VARCHAR(50)," +
+                "year INT," +
+                "email VARCHAR(100));
     ```
 
 ## Database Connection
